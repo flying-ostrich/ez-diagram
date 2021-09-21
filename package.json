@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "concurrently \"rollup -c -w --NODE_ENV=development --example=simple-edge\" \"typedoc --watch\" \"vuepress dev docs\"",
     "build": "rollup -c --NODE_ENV=production",
+    "apidocs":"typedoc",
     "lint": "eslint --ext .js,.ts,.tsx  src/  --fix",
     "test": "jest",
-    "apidocs": "typedoc --watch",
+    "apidocs:dev": "typedoc --watch",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:serve": "vuepress serve docs"
