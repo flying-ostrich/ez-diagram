@@ -1,4 +1,6 @@
 language: node_js
+before_script:
+  - npm i
 deploy:
   provider: pages
   skip_cleanup: true
