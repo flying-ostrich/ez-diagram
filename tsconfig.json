@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "sourceMap": true,
+    "declaration": true,
+    "lib": ["dom", "es6"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+
+    "strict": false,
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "preserveConstEnums": true
+  },
+  "include": ["src/**/*", "test"],
+  "typedocOptions": {
+    "entryPoints": ["src/public-api.ts"],
+    "out": "docs/.vuepress/public/api-reference"
+  }
+}

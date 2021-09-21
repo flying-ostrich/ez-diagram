@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    svg {
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+<body>
+    <div class="container"></div>
+    <script src="./../dist//ez-diagram.umd.js"></script>
+    <script>
+        const container = document.querySelector('.container');
+        const model = new Ez.EzModel();
+        const style = {
+            shape: 'rectangle',
+            fill:"none",
+            stroke:"black",
+            strokeWidth:1
+        }
+        const sticky1 = new Ez.EzVertex(new Ez.EzRectangle(10,10,200,300),style,'sticky');
+        model.addVertex(sticky1,model.getRoot());
+        const ezDiagram = new Ez.EzDiagram(container,model);
+        window.diagram = ezDiagram;
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    svg {
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+<body>
+    <div class="container"></div>
+    <script src="./../dist/ez-diagram.umd.js"></script>
+    <script>
+        const container = document.querySelector('.container');
+        const model = new Ez.EzModel();
+        const style = {
+            shape: 'line',
+            stroke:"black",
+            markerStart:'triangle',
+            markerEnd:'square',
+            strokeWidth:2
+        }
+
+        const line = new Ez.EzEdge([new Ez.EzPoint(400,90),new Ez.EzPoint(400,290),new Ez.EzPoint(60,700)],style,'line');
+        const line1 = new Ez.EzEdge([new Ez.EzPoint(600,90),new Ez.EzPoint(500,290),new Ez.EzPoint(90,700)],style,'line2');
+        model.addEdge(line,model.getRoot());
+        model.addEdge(line1,model.getRoot());
+        const ezDiagram = new Ez.EzDiagram(container,model);
+        window.diagram = ezDiagram;
+    </script>
+</body>
+</html>
