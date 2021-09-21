@@ -1,6 +1,6 @@
 node_modules
 docs/dist
-docs/site
+site
 docs/.vuepress/public/api-reference
 docs/.vuepress/public/ez-diagram-esm
 docs/.vuepress/public/ez-diagram-umd

@@ -2,7 +2,7 @@ module.exports = {
   title: "ez-diagram",
   description:
     "a powerful and easy javascript framework to help build rich graphs",
-  dest:'docs/site',
+  dest:'site',
   themeConfig: {
     sidebar: "auto",
     nav: [
