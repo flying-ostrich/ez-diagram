@@ -16,6 +16,5 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $EZDIAGRAM 
-  keep_history: true
   on:
     branch: gh-pages
