@@ -20,6 +20,6 @@
   "include": ["src/**/*", "test"],
   "typedocOptions": {
     "entryPoints": ["src/public-api.ts"],
-    "out": "docs/.vuepress/public/api-reference"
+    "out": "docs/api-reference"
   }
 }
