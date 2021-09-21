@@ -9,6 +9,9 @@ cache:
 install:
   - yarn install
 
+before_script:
+  - rm .gitignore
+
 script:
   - yarn build
 
