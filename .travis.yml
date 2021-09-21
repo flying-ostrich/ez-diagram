@@ -11,6 +11,7 @@ install:
 
 before_script:
   - rm .gitignore
+  - echo node_modules > .gitignore
 
 script:
   - yarn build
