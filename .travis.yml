@@ -17,4 +17,4 @@ deploy:
   skip_cleanup: true
   github_token: $EZDIAGRAM 
   on:
-    branch: master
+    branch: main
