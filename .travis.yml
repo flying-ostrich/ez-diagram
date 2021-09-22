@@ -15,12 +15,13 @@ before_script:
 
 script:
   - yarn build
-  - yarn apidocs
+  - yarn api:build
   - yarn docs:build
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $EZDIAGRAM 
+  local_dir: site
   on:
     branch: main
