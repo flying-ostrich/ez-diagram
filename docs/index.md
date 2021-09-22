@@ -161,3 +161,15 @@ the following example will show you how to create a ClickLog plugin , that is , 
 ### custom shape
 ### custom arrow heads
 
+## what's next ?
+### IO
+- export diagram as xml and json 
+- export diagram as svg and png
+- restore diagram from xml or json
+### undoManager
+- collect changes such as styleChange 、 textChange 、 geometryChange ...
+- enable undo & redo 
+
+### more built in shapes
+- UML shapes such as UML class 、 UML interface 、 UML active 、UML live line ...
+
