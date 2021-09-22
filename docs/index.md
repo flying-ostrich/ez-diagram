@@ -1,9 +1,11 @@
 # Tutorial
 ## Essentials
 ### What is ez-diagram ?
-ez-graph is a powerful and easy javascript framework to help build rich graphs.
+ez-diagram is a powerful and easy javascript framework to help build rich graphs. for more examples , see [here](/demos.md)
 ### Installation
-TODO
+::: tip
+ez-diagram is currently under development , you can checkout the source code from repo and build it . have fun !!!
+:::
 ### Hello world
 The following demo demonstrates how to use ez-diagram to create a simple graph with vertex and edge.
 
@@ -36,7 +38,7 @@ ez-diagram provides many built in shapes to help you create different vertex .
 :::
 ::::
 
-for more built in shapes , see <a href="/api-reference/modules.html#BUILTIN_SHAPE" target="_blank">built in shapes</a>
+for more built in shapes , see <a :href="$withBase('/api-reference/modules.html#BUILTIN_SHAPE')" target="_blank">built in shapes</a>
 
 also , you can create edge with class EzEdge.
 :::: tabs
@@ -49,7 +51,7 @@ also , you can create edge with class EzEdge.
 :::
 ::::
 
-for more built in markers , see <a href="/api-reference/modules.html#BUILTIN_MARKER" target="_blank">built in markers</a>
+for more built in markers , see <a :href="$withBase('/api-reference/modules.html#BUILTIN_MARKER')" target="_blank">built in markers</a>
 
 ### Diagram actions
 
@@ -58,7 +60,7 @@ for more built in markers , see <a href="/api-reference/modules.html#BUILTIN_MAR
  diagram.actions.execute(BUILTIN_ACTIONS.DELETE_SELECTED)
 ```
 to delete the selected elements . for more built in actions , see 
-<a href="/api-reference/modules.html#BUILTIN_MARKER" target="_blank">built in actions</a>
+<a :href="$withBase('/api-reference/modules.html#BUILTIN_MARKER')" target="_blank">built in actions</a>
 
 if you want to chage default behavior of diagram action , you can simply overwrite corresponding action handler
 ```javascript
@@ -95,11 +97,67 @@ diagram.keyHandler.bindKeyHandler(ModifierKey.shift, "d", () => {
 
 ```
 
-### styling vertex and edge
+### styling diagram node
+there are two way to style diagram nodes.
+- by specify style options when creating vertex or edge
+```js
+  const vertex = new EzVertex(  
+    new EzRectangle(0,0,10,10),
+    { 
+      /* style options here */
+    },
+    'vertex text'
+  )
+  const edge = new EzEdge(  
+    [new EzPoint(0,0),new EzPoint(100,0)],
+    { 
+      /* style options here */
+    }
+  )
+```
+- by invoke <a :href="$withBase('/api-reference/classes/EzDiagram.html#setVertexStyle')">EzDiagram.setVertexStyle</a> or <a :href="$withBase('/api-reference/classes/EzDiagram.html#setEdgeStyle')">EzDiagram.setEdgeStyle</a>
+
+- available style options  <a :href="$withBase('/api-reference/modules/Style.html')">here</a>
 
 
 
 ## Advanced
+
+### plugin development
+An ez-diagram plugin is a class with one or more life cycle hooks which enable you to hook into a diagram's lifecycle.
+here are two small step to development your own ez-diagram plugin:
+- write a class which extends the base <a :href="$withBase('api-reference/classes/Plugin.EzDiagramPlugin.html')">EzDiagramPlugin</a> class.
+- register your plugin instance with a plugin name , by <a :href="$withBase('api-reference/classes/Plugin.EzDiagramPluginManager.html#use')">diagram.pluginManager.use</a>
+
+#### A simple example
+the following example will show you how to create a ClickLog plugin , that is , when user click any diagram node , the node id will be logged in the console.
+
+:::: tabs
+
+::: tab click-log.esm.js
+<<< @/docs/.vuepress/public/examples/click-log/click-log.esm.js
+:::
+
+::: tab click-log.plugin.js
+<<< @/docs/.vuepress/public/examples/click-log/click-log.plugin.js
+:::
+
+::: tab util.js
+<<< @/docs/.vuepress/public/examples/util.js
+:::
+
+::: tab click-log.html
+<<< @/docs/.vuepress/public/examples/click-log/click-log.html
+:::
+
+::: tab preview
+<a :href="$withBase('/examples/click-log/click-log.html')" target="_blank">open in new tab</a>
+<iframe class="thin" :src="$withBase('/examples/click-log/click-log.html')"></iframe>
+:::
+::::
+
+
+
 ### custom shape
 ### custom arrow heads
 

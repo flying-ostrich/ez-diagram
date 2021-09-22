@@ -182,6 +182,7 @@ export class EzDiagramView {
     }
 
     private _updateState(state:EzViewState) {
+        state.style = state.node.style;
         state.scaleAndTranslate(this._scale, this._translate);
     }
 
@@ -597,8 +598,10 @@ export class EzDiagramView {
                 state.updateWork = STATE_WORK_TYPE.NO_WORK;
             }
         });
-        this.dirtyStates.length =0;
-        this._diagram.pluginManager.callHook('afterViewUpdate', this._diagram);
+        if(this.dirtyStates.length){
+            this._diagram.pluginManager.callHook('afterViewUpdate', this._diagram);
+        }
+        this.dirtyStates.length=0;
     }
 
 

@@ -23,6 +23,8 @@ import { EzDiagramNode } from '../model/diagram-node';
 import { EzLayoutManager } from '../layout/layout-manager';
 import { BUILTIN_LAYOUT } from '../layout/constant';
 import { TreeLayout } from '../layout/tree-layout/tree-layout';
+import { EzEdgeStyleOptions, EzVertexStyleOptions } from '../view/style/style';
+import { STATE_WORK_TYPE } from '../view/view/view-state';
 
 
 interface EzDiagramOpts {
@@ -142,7 +144,9 @@ export class EzDiagram {
         this.view.setScale(scale);
     }
 
-
+    /**
+     * execute layout for all layout root nodes
+     */
     executeLayouts(){
         const roots = this.model.getLayoutRoots();
         roots.forEach(root=>{
@@ -222,6 +226,28 @@ export class EzDiagram {
         this.view.changeOrder(node, 0);
     }
 
+    /**
+     * 
+     * @param vertex 
+     * @param style 
+     */
+    setVertexStyle(vertex:EzVertex,style:EzVertexStyleOptions):void {
+        Object.assign(vertex.style,style);
+        const state = this.view.stateMapping.get(vertex.id);
+        state.updateWork = STATE_WORK_TYPE.UPDATE_FROM_MODEL;
+    }
+
+    /**
+     * 
+     * @param edge 
+     * @param style 
+     */
+    setEdgeStyle(edge:EzEdge,style:EzEdgeStyleOptions):void {
+        Object.assign(edge.style,style);
+        const state = this.view.stateMapping.get(edge.id);
+        state.updateWork = STATE_WORK_TYPE.UPDATE_FROM_MODEL;
+    }
+
 
     registerShape(shapeName:string, shape:EzShapeConstructor):void {
         this.view.shapeManager.registerShape(shapeName, shape);
@@ -232,20 +258,4 @@ export class EzDiagram {
         this.pluginManager.callHook('onDestroy');
     }
 
-    removeVertex():void{}
-
-    moveVertex():void{}
-
-    rotateVertex():void{}
-
-    resizeVertex():void{}
-
-
-    removeEdge():void{}
-
-    moveEdge():void{}
-
-    rotateEdge():void{}
-
-    resizeEdge():void{}
 }

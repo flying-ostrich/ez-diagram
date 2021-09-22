@@ -31,18 +31,18 @@ export class EzVertexShape extends EzShape implements VertexShapeLifeCycle {
         this.state = state;
         this.style = getSvgStyle(this.state.style);
         this.root.attr({dataId:state.node.id, class:EZ_VIEW_VERTEX_CLASS });
-        // if(state.style.editable === false){
-        //     this.root.attr({pointerEvents:'none'});
-        // }
         this.root.el['state'] = this.state;
     }
 
     draw():void {
         this._updateRotation();
+        this.style = getSvgStyle(this.state.style);
     }
 
     redraw():void{
         this._updateRotation();
+        this.style = getSvgStyle(this.state.style);
+
     }
 
     private _updateRotation():void {

@@ -1,3 +1,4 @@
+import { COLOR_TRANSPARENT_WHITE } from '../../../../constants';
 import { EzElement } from '../../../canvas/ez-element';
 import { DEFAULT_MOUSE_ACTION_TOLERENCE } from '../../../style/style';
 import {EzEdgeViewState} from '../../../view/view-state';
@@ -32,7 +33,7 @@ export class EzLineShape extends EzEdgeShape {
         });
         this.line = EzElement.line(points).attr(this.style);
         this.transparentLine = this.line.clone()
-            .attr({strokeWidth:+this.style.strokeWidth+DEFAULT_MOUSE_ACTION_TOLERENCE, stroke:'transparent'})
+            .attr({strokeWidth:+this.style.strokeWidth+DEFAULT_MOUSE_ACTION_TOLERENCE, stroke:COLOR_TRANSPARENT_WHITE})
             .removeAttr('markerStart')
             .removeAttr('markerEnd');
         this.root.appendChildren([this.line, this.transparentLine]);

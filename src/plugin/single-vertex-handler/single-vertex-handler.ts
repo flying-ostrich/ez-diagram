@@ -164,7 +164,11 @@ export class SingleVertexHandler extends EzDiagramPlugin {
             this.rotationHandler
         ]);
         this._updateHandlerEl();
+        this.handlerEl.attr({pointerEvents:'none'});
         this.diagram.view.overlayGroup.appendChild(this.handlerEl);
+        setTimeout(()=>{
+            this.handlerEl.removeAttr('pointerEvents');
+        },200);
     }
 
     private _updateHandlerEl():void {

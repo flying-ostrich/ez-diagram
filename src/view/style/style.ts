@@ -1,3 +1,5 @@
+import { COLOR_TRANSPARENT_WHITE } from "../../constants";
+
 declare type SVG_POINTER_EVENTS = 'bounding-box' | 'visiblePainted' | 'visibleFill' | 'visibleStroke' | 'visible' | 'painted' | 'fill' | 'stroke' | 'all' | 'none';
 
 export const DEFAULT_STROKE_WIDTH = 1;
@@ -7,7 +9,7 @@ export const DEFAULT_MOUSE_ACTION_TOLERENCE = 4;
 
 export interface EzVertexStyleOptions {
     shape?:string;
-    rotation:number;
+    rotation?:number;
     editable?:boolean;
     movable?:boolean;
     selectable?:boolean;
@@ -19,9 +21,8 @@ export interface EzVertexStyleOptions {
     pointerEvents?:SVG_POINTER_EVENTS;
 
     /**font styles */
-    color:string; // font color
-    fontSize:string; // font size
-
+    color?:string; // font color
+    fontSize?:string; // font size
 }
 
 export interface EzEdgeStyleOptions {
@@ -49,6 +50,9 @@ export function getSvgStyle(style:EzStyleOptions):{[key:string]:string}{
             svgStyle[key] = style[key];      
         }
     });
+    if(svgStyle['fill']==='none'){
+        svgStyle['fill'] = COLOR_TRANSPARENT_WHITE;
+    }
     return svgStyle;
 }
 

@@ -166,6 +166,7 @@ export class SingleLineHandler extends EzDiagramPlugin {
             }
             
         }
+        this.shapeEl.attr({pointerEvents:'none'});
         this.diagram.view.overlayGroup.appendChildren([this.shapeEl, ...this.bends, ...this.virtualBends]);
     }
 
