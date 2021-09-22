@@ -1,0 +1,98 @@
+body {
+    display: flex;
+}
+
+.title {
+    color: #707070;
+}
+
+.shape-selector {
+    width: 150px;
+    background-color: white;
+    border-right: 1px solid gainsboro;
+    padding: 5px;
+}
+
+.shape-selector .shapes {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin: 10px 0;
+}
+
+.shape-selector .shapes .shape {
+    word-wrap: break-word;
+    width: 33.3%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shapes .shape:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+    border-radius: 2px;
+    user-select: none;
+}
+
+.shape svg {
+    width: 30px;
+    height: 30px;
+}
+
+.shape-selector .shapes .shape img {
+    width: 35px;
+}
+
+.container {
+    flex: 1;
+}
+
+.container svg {
+    width: 100%;
+}
+
+.diagram-attributes-editor, .vertex-attributes-editor {
+    width: 200px;
+    background-color: white;
+    border-left: 1px solid gainsboro;
+    padding: 5px;
+}
+
+.diagram-attributes-editor .diagram-attributes {
+    padding-left: 10px;
+    color: #707070;
+}
+
+.diagram-attributes .attribute-item {
+    padding: 15px 10px;
+}
+
+
+
+.vertex-attributes-editor {
+    display: none;
+}
+
+.vertex-attribute-editor .diagram-attributes .attribute-item {
+    padding: 5px 10px;
+}
+
+.bounding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#vertex-x,#vertex-y {
+    width: 65px;
+}
+
+#vertex-w,#vertex-h {
+    width: 65px;
+}

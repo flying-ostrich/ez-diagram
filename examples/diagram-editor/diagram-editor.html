@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="./editor.css" />
+  </head>
+  <body>
+    <div class="shape-selector">
+      <div class="title">General Shapes</div>
+      <div class="general-shapes shapes">
+        <div class="shape" draggable="true">
+          <img
+            class="rectangle"
+            title="rectangle"
+            src="../icons/process.webp"
+          />
+        </div>
+      </div>
+      <div class="title">Flow Chart Shapes</div>
+      <div class="flowchart-shapes shapes">
+        <div class="shape" draggable="true">
+          <img
+            class="alternate-process"
+            title="alternate-process"
+            src="../icons/alternate-process.webp"
+          />
+        </div>
+        <div class="shape" draggable="true">
+          <img class="data" title="data" src="../icons/data.webp" />
+        </div>
+        <div class="shape" draggable="true">
+          <img class="decision" title="decision" src="../icons/decision.webp" />
+        </div>
+        <div class="shape" draggable="true">
+          <img class="delay" title="delay" src="../icons/delay.webp" />
+        </div>
+        <div class="shape" draggable="true">
+          <img class="document" title="document" src="../icons/document.webp" />
+        </div>
+        <div class="shape" draggable="true">
+          <img
+            class="input-output"
+            title="input-output"
+            src="../icons/input-output.webp"
+          />
+        </div>
+        <div class="shape" draggable="true">
+          <img
+            class="manual-input"
+            title="manual-input"
+            src="../icons/manual-input.webp"
+          />
+        </div>
+        <div class="shape" draggable="true">
+          <img
+            class="manual-operation"
+            title="manual-operation"
+            src="../icons/manual-operation.webp"
+          />
+        </div>
+        <div class="shape" draggable="true">
+          <img
+            class="multi-document"
+            title="multi-document"
+            src="../icons/documents.webp"
+          />
+        </div>
+        <div class="shape" draggable="true">
+          <img
+            class="off-page-connector"
+            title="off-page-connector"
+            src="../icons/off-page-connector.webp"
+          />
+        </div>
+        <div class="shape" draggable="true">
+          <img
+            class="on-page-connector"
+            title="on-page-connector"
+            src="../icons/on-page-connector.webp"
+          />
+        </div>
+        <div class="shape" draggable="true">
+          <img
+            class="predefined-process"
+            title="predefined-process"
+            src="../icons/predefined-process.webp"
+          />
+        </div>
+        <div class="shape" draggable="true">
+          <img
+            class="preparation"
+            title="preparation"
+            src="../icons/preparation.webp"
+          />
+        </div>
+        <div class="shape" draggable="true">
+          <img class="process" title="process" src="../icons/process.webp" />
+        </div>
+        <div class="shape" draggable="true">
+          <img class="terminal" title="terminal" src="../icons/terminal.webp" />
+        </div>
+      </div>
+      <div class="title">Sticker Shapes</div>
+      <div class="sticker-shapes shapes">
+        <div class="shape sticker" draggable="true">
+          <svg class="rect-sticker" viewbox="0 0 30 30">
+            <rect
+              x="0"
+              y="0"
+              width="30"
+              height="30"
+              fill="rgb(147, 157, 168)"
+            ></rect>
+          </svg>
+        </div>
+        <div class="shape sticker" draggable="true">
+          <svg class="rect-sticker" viewbox="0 0 30 30">
+            <rect
+              x="0"
+              y="0"
+              width="30"
+              height="30"
+              fill="rgb(255, 167, 37)"
+            ></rect>
+          </svg>
+        </div>
+        <div class="shape sticker" draggable="true">
+          <svg class="rect-sticker" viewbox="0 0 30 30">
+            <rect
+              x="0"
+              y="0"
+              width="30"
+              height="30"
+              fill="rgb(87, 110, 224)"
+            ></rect>
+          </svg>
+        </div>
+        <div class="shape round-sticker" draggable="true" draggable="true"> 
+          <svg class="rect-sticker" viewbox="0 0 30 30">
+            <rect
+              x="0"
+              y="0"
+              width="30"
+              height="30"
+              rx="50%"
+              ry="50%"
+              fill="rgb(164, 204, 255)"
+            ></rect>
+          </svg>
+        </div>
+        <div class="shape round-sticker" draggable="true">
+          <svg class="rect-sticker" viewbox="0 0 30 30">
+            <rect
+              x="0"
+              y="0"
+              width="30"
+              height="30"
+              rx="50%"
+              ry="50%"
+              fill="rgb(255, 207, 47)"
+            ></rect>
+          </svg>
+        </div>
+        <div class="shape round-sticker" draggable="true">
+          <svg class="rect-sticker" viewbox="0 0 30 30">
+            <rect
+              x="0"
+              y="0"
+              width="30"
+              height="30"
+              rx="50%"
+              ry="50%"
+              fill="rgb(255, 167, 37)"
+            ></rect>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="container"></div>
+    <div class="diagram-attributes-editor">
+        <div class="diagram-attributes">
+            <div class="title">Diagram</div>
+            <div class="attribute-item">
+                <input id="grid-bg" type="checkbox" checked/>
+                <label for="grid-bg">grid background</label>
+            </div>
+            <div class="attribute-item">
+                <label for="scale">diagram scale:</label>
+                <input id="scale" type="number" min="0.5" max="2" value="1" step="0.1"/>
+            </div>
+            <div class="attribute-item">
+                <div>diagram translate</div>
+                <label for="translate-x">x:</label>
+                <input id="translate-x" type="number" value="0" step="10"/><br>
+                <label for="translate-y">y:</label>
+                <input id="translate-y" type="number" value="0" step="10"/>
+            </div>
+        </div>
+    </div>
+    <div class="vertex-attributes-editor">
+        <div class="diagram-attributes">
+            <div class="title">Vertex</div>
+            <div class="attribute-item">
+                    <button id="to-front">to front</button>
+                    <button id="to-bottom">to bottom</button>
+            </div>
+            <div class="attribute-item bounding">
+                <label for="vertex-x">x:</label>
+                <input id="vertex-x" type="number" min="10"  value="10" step="5"/>
+                <label for="vertex-y">y:</label>
+                <input id="vertex-y" type="number" min="10"  value="10" step="5"/>
+                <label for="vertex-w">w:</label>
+                <input id="vertex-w" type="number" min="10"  value="10" step="5"/>
+                <label for="vertex-h">h:</label>
+                <input id="vertex-h" type="number" min="10"  value="10" step="5"/>
+            </div>
+            <div class="attribute-item">
+              
+            </div>
+            <div class="attribute-item">
+                <label for="scale">Rotation:</label>
+                <input id="scale" type="range" min="0" max="360" value="1" step="0.1"/>
+            </div>
+            <div class="attribute-item">
+                <label for="scale">Fill:</label>
+                <input id="scale" type="color"/>
+            </div>
+            <div class="attribute-item">
+                <label for="scale">Stroke:</label>
+                <input id="scale" type="color"/>
+            </div>
+        </div>
+    </div>
+    <!-- es module example -->
+    <script type="module" src="./diagram-editor.esm.js"></script>
+  </body>
+</html>

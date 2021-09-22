@@ -1,0 +1,1446 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SelectPlugin | ez-diagram</title>
+	<meta name="description" content="Documentation for ez-diagram">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">ez-diagram</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">ez-diagram</a>
+				</li>
+				<li>
+					<a href="../modules/Plugin.html">Plugin</a>
+				</li>
+				<li>
+					<a href="Plugin.SelectPlugin.html">SelectPlugin</a>
+				</li>
+			</ul>
+			<h1>Class SelectPlugin</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p> selection plugin is a built in plugin that handles element selection in a diagram,for example:</p>
+						<ul>
+							<li>if you click on a single element(edge or vertex) , the element will be selected and will be placed in the <a href="Plugin.EzDiagramPluginManager.html#pluginContext">EzDiagramPluginManager.pluginContext</a></li>
+							<li>if you use mouse dragging to select multiple elements, those elements will  also be placed in the <a href="Plugin.EzDiagramPluginManager.html#pluginContext">EzDiagramPluginManager.pluginContext</a></li>
+						</ul>
+					</div>
+					<p> access the selected element via:</p>
+					<pre><code class="language-javascript"><span style="color: #000000">   </span><span style="color: #008000">// diagram is instance of EzDiagram</span>
+<span style="color: #000000">   </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">selected</span><span style="color: #000000"> = </span><span style="color: #001080">diagram</span><span style="color: #000000">.</span><span style="color: #001080">pluginManager</span><span style="color: #000000">.</span><span style="color: #795E26">getContext</span><span style="color: #000000">().</span><span style="color: #001080">selectedViewStates</span><span style="color: #000000">;</span>
+</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="Plugin.EzDiagramPlugin.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagramPlugin</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">SelectPlugin</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="Plugin.SelectPlugin.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#active" class="tsd-kind-icon">active</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#diagram" class="tsd-kind-icon">diagram</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#disabled" class="tsd-kind-icon">disabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Plugin.SelectPlugin.html#selectionArea" class="tsd-kind-icon">selection<wbr>Area</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Plugin.SelectPlugin.html#selectionBox" class="tsd-kind-icon">selection<wbr>Box</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Plugin.SelectPlugin.html#startPoint" class="tsd-kind-icon">start<wbr>Point</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="Plugin.SelectPlugin.html#SELECTION_BOX_TOLERANCE" class="tsd-kind-icon">SELECTION_<wbr>BOX_<wbr>TOLERANCE</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="Plugin.SelectPlugin.html#selected" class="tsd-kind-icon">selected</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#afterUpdate" class="tsd-kind-icon">after<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#afterViewUpdate" class="tsd-kind-icon">after<wbr>View<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#beforeCallingHook" class="tsd-kind-icon">before<wbr>Calling<wbr>Hook</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#beforeUpdate" class="tsd-kind-icon">before<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#beforeViewUpdate" class="tsd-kind-icon">before<wbr>View<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Plugin.SelectPlugin.html#canActivate" class="tsd-kind-icon">can<wbr>Activate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Plugin.SelectPlugin.html#changeSelection" class="tsd-kind-icon">change<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="Plugin.SelectPlugin.html#createSelectionBox" class="tsd-kind-icon">create<wbr>Selection<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="Plugin.SelectPlugin.html#getInterSelectionStates" class="tsd-kind-icon">get<wbr>Inter<wbr>Selection<wbr>States</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="Plugin.SelectPlugin.html#isHandlerEvent" class="tsd-kind-icon">is<wbr>Handler<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onChangeSelection" class="tsd-kind-icon">on<wbr>Change<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onClick" class="tsd-kind-icon">on<wbr>Click</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onCreate" class="tsd-kind-icon">on<wbr>Create</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onDblClick" class="tsd-kind-icon">on<wbr>Dbl<wbr>Click</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onDeActivate" class="tsd-kind-icon">on<wbr>DeActivate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onDestroy" class="tsd-kind-icon">on<wbr>Destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Plugin.SelectPlugin.html#onMouseDown" class="tsd-kind-icon">on<wbr>Mouse<wbr>Down</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onMouseMove" class="tsd-kind-icon">on<wbr>Mouse<wbr>Move</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Plugin.SelectPlugin.html#onMouseUp" class="tsd-kind-icon">on<wbr>Mouse<wbr>Up</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onMoveVertex" class="tsd-kind-icon">on<wbr>Move<wbr>Vertex</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onMovingVertex" class="tsd-kind-icon">on<wbr>Moving<wbr>Vertex</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Plugin.SelectPlugin.html#onPressMove" class="tsd-kind-icon">on<wbr>Press<wbr>Move</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="Plugin.SelectPlugin.html#onRemoveState" class="tsd-kind-icon">on<wbr>Remove<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onRendered" class="tsd-kind-icon">on<wbr>Rendered</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onResizeVertex" class="tsd-kind-icon">on<wbr>Resize<wbr>Vertex</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onResizingVertex" class="tsd-kind-icon">on<wbr>Resizing<wbr>Vertex</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onRotateVertex" class="tsd-kind-icon">on<wbr>Rotate<wbr>Vertex</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onRotatingVertex" class="tsd-kind-icon">on<wbr>Rotating<wbr>Vertex</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onScaleDiagram" class="tsd-kind-icon">on<wbr>Scale<wbr>Diagram</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onStartEditing" class="tsd-kind-icon">on<wbr>Start<wbr>Editing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onStopEditing" class="tsd-kind-icon">on<wbr>Stop<wbr>Editing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#onTranslateDiagram" class="tsd-kind-icon">on<wbr>Translate<wbr>Diagram</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="Plugin.SelectPlugin.html#setDisabled" class="tsd-kind-icon">set<wbr>Disabled</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Select<wbr>Plugin<span class="tsd-signature-symbol">(</span>diagram<span class="tsd-signature-symbol">: </span><a href="EzDiagram.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagram</a>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/Plugin.EzPluginContext.html" class="tsd-signature-type" data-tsd-kind="Interface">EzPluginContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Plugin.SelectPlugin.html" class="tsd-signature-type" data-tsd-kind="Class">SelectPlugin</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L30">plugin/selection-plugin/selection-plugin.ts:30</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>diagram: <a href="EzDiagram.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagram</a></h5>
+								</li>
+								<li>
+									<h5>context: <a href="../interfaces/Plugin.EzPluginContext.html" class="tsd-signature-type" data-tsd-kind="Interface">EzPluginContext</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Plugin.SelectPlugin.html" class="tsd-signature-type" data-tsd-kind="Class">SelectPlugin</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="active" class="tsd-anchor"></a>
+					<h3>active</h3>
+					<div class="tsd-signature tsd-kind-icon">active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#active">active</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L9">plugin/diagram-plugin.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/Plugin.EzPluginContext.html" class="tsd-signature-type" data-tsd-kind="Interface">EzPluginContext</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#context">context</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L15">plugin/diagram-plugin.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="diagram" class="tsd-anchor"></a>
+					<h3>diagram</h3>
+					<div class="tsd-signature tsd-kind-icon">diagram<span class="tsd-signature-symbol">:</span> <a href="EzDiagram.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagram</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#diagram">diagram</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L13">plugin/diagram-plugin.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="disabled" class="tsd-anchor"></a>
+					<h3>disabled</h3>
+					<div class="tsd-signature tsd-kind-icon">disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#disabled">disabled</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L11">plugin/diagram-plugin.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="selectionArea" class="tsd-anchor"></a>
+					<h3>selection<wbr>Area</h3>
+					<div class="tsd-signature tsd-kind-icon">selection<wbr>Area<span class="tsd-signature-symbol">:</span> <a href="EzRectangle.html" class="tsd-signature-type" data-tsd-kind="Class">EzRectangle</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L28">plugin/selection-plugin/selection-plugin.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="selectionBox" class="tsd-anchor"></a>
+					<h3>selection<wbr>Box</h3>
+					<div class="tsd-signature tsd-kind-icon">selection<wbr>Box<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Element</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L26">plugin/selection-plugin/selection-plugin.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="startPoint" class="tsd-anchor"></a>
+					<h3>start<wbr>Point</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Point<span class="tsd-signature-symbol">:</span> <a href="EzPoint.html" class="tsd-signature-type" data-tsd-kind="Class">EzPoint</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L24">plugin/selection-plugin/selection-plugin.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="SELECTION_BOX_TOLERANCE" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SELECTION_<wbr>BOX_<wbr>TOLERANCE</h3>
+					<div class="tsd-signature tsd-kind-icon">SELECTION_<wbr>BOX_<wbr>TOLERANCE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 4</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L22">plugin/selection-plugin/selection-plugin.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="selected" class="tsd-anchor"></a>
+					<h3>selected</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> selected<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L35">plugin/selection-plugin/selection-plugin.ts:35</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="afterUpdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> after<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">after<wbr>Update<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzDiagramNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#afterUpdate">afterUpdate</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L62">plugin/diagram-plugin.ts:62</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <span class="tsd-signature-type">EzDiagramNode</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="afterViewUpdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> after<wbr>View<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">after<wbr>View<wbr>Update<span class="tsd-signature-symbol">(</span>diagram<span class="tsd-signature-symbol">: </span><a href="EzDiagram.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagram</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#afterViewUpdate">afterViewUpdate</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L74">plugin/diagram-plugin.ts:74</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> trigger after <a href="EzDiagramView.html">EzDiagramView</a> update , this means this hook will be called after DOM is updated.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>diagram: <a href="EzDiagram.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagram</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>instance of <a href="EzDiagram.html">EzDiagram</a></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="beforeCallingHook" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>Calling<wbr>Hook</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">before<wbr>Calling<wbr>Hook<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzMouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#beforeCallingHook">beforeCallingHook</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L31">plugin/diagram-plugin.ts:31</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>call before any plugin hook executes .
+									such as disable a plugin</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>evt: <span class="tsd-signature-type">EzMouseEvent</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="beforeUpdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">before<wbr>Update<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzDiagramNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#beforeUpdate">beforeUpdate</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L60">plugin/diagram-plugin.ts:60</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <span class="tsd-signature-type">EzDiagramNode</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="beforeViewUpdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>View<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">before<wbr>View<wbr>Update<span class="tsd-signature-symbol">(</span>diagram<span class="tsd-signature-symbol">: </span><a href="EzDiagram.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagram</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#beforeViewUpdate">beforeViewUpdate</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L68">plugin/diagram-plugin.ts:68</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> trigger before <a href="EzDiagramView.html">EzDiagramView</a> update</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>diagram: <a href="EzDiagram.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagram</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>instance of <a href="EzDiagram.html">EzDiagram</a></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="canActivate" class="tsd-anchor"></a>
+					<h3>can<wbr>Activate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">can<wbr>Activate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#canActivate">canActivate</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L39">plugin/selection-plugin/selection-plugin.ts:39</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>this method defermine the plugin active status.
+										if return true , plugin hook will be correctly called , otherwise , hook will be disabled.
+									note that subclass can overwrite this method to determine plugin active status</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="changeSelection" class="tsd-anchor"></a>
+					<h3>change<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">change<wbr>Selection<span class="tsd-signature-symbol">(</span>selectedStates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L145">plugin/selection-plugin/selection-plugin.ts:145</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>change current selected states</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>selectedStates: <span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="createSelectionBox" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Selection<wbr>Box</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Selection<wbr>Box<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L43">plugin/selection-plugin/selection-plugin.ts:43</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getInterSelectionStates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Inter<wbr>Selection<wbr>States</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Inter<wbr>Selection<wbr>States<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="EzDiagramView.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagramView</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L55">plugin/selection-plugin/selection-plugin.ts:55</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>view: <a href="EzDiagramView.html" class="tsd-signature-type" data-tsd-kind="Class">EzDiagramView</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isHandlerEvent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Handler<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Handler<wbr>Event<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L152">plugin/selection-plugin/selection-plugin.ts:152</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>evt: <span class="tsd-signature-type">MouseEvent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onChangeSelection" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Change<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<wbr>Selection<span class="tsd-signature-symbol">(</span>prev<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span>, next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onChangeSelection">onChangeSelection</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L79">plugin/diagram-plugin.ts:79</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> trigger after selection change</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>prev: <span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>next: <span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onClick" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Click</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Click<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzMouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onClick">onClick</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L149">plugin/diagram-plugin.ts:149</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>evt: <span class="tsd-signature-type">EzMouseEvent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onCreate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Create</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Create<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onCreate">onCreate</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L48">plugin/diagram-plugin.ts:48</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> call after <a href="EzDiagram.html">EzDiagram</a> instance created.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onDblClick" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Dbl<wbr>Click</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Dbl<wbr>Click<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzMouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onDblClick">onDblClick</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L151">plugin/diagram-plugin.ts:151</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>evt: <span class="tsd-signature-type">EzMouseEvent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onDeActivate" class="tsd-anchor"></a>
+					<h3>on<wbr>DeActivate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>DeActivate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onDeActivate">onDeActivate</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L43">plugin/diagram-plugin.ts:43</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onDestroy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Destroy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Destroy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onDestroy">onDestroy</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L53">plugin/diagram-plugin.ts:53</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> call after <a href="EzDiagram.html">EzDiagram</a> instance destroyed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="onMouseDown" class="tsd-anchor"></a>
+					<h3>on<wbr>Mouse<wbr>Down</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Mouse<wbr>Down<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzMouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onMouseDown">onMouseDown</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L73">plugin/selection-plugin/selection-plugin.ts:73</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-type">EzMouseEvent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onMouseMove" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Mouse<wbr>Move</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Mouse<wbr>Move<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzMouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onMouseMove">onMouseMove</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L155">plugin/diagram-plugin.ts:155</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>evt: <span class="tsd-signature-type">EzMouseEvent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="onMouseUp" class="tsd-anchor"></a>
+					<h3>on<wbr>Mouse<wbr>Up</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Mouse<wbr>Up<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onMouseUp">onMouseUp</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L110">plugin/selection-plugin/selection-plugin.ts:110</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-type">Object</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onMoveVertex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Move<wbr>Vertex</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Move<wbr>Vertex<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzVertexViewState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onMoveVertex">onMoveVertex</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L105">plugin/diagram-plugin.ts:105</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>trigger after the vertex is moved  by user</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">EzVertexViewState</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onMovingVertex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Moving<wbr>Vertex</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Moving<wbr>Vertex<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzVertexViewState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onMovingVertex">onMovingVertex</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L99">plugin/diagram-plugin.ts:99</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> trigger when the vertex is moving by user</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">EzVertexViewState</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="onPressMove" class="tsd-anchor"></a>
+					<h3>on<wbr>Press<wbr>Move</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Press<wbr>Move<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzMouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onPressMove">onPressMove</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L91">plugin/selection-plugin/selection-plugin.ts:91</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-type">EzMouseEvent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="onRemoveState" class="tsd-anchor"></a>
+					<h3>on<wbr>Remove<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Remove<wbr>State<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzViewState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onRemoveState">onRemoveState</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/selection-plugin/selection-plugin.ts#L132">plugin/selection-plugin/selection-plugin.ts:132</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> check removing state is currently selected , if true , remove it from selected states</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">EzViewState</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onRendered" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Rendered</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Rendered<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onRendered">onRendered</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L58">plugin/diagram-plugin.ts:58</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> call after <a href="EzDiagramView.html">EzDiagramView</a> rendered.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onResizeVertex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Resize<wbr>Vertex</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Resize<wbr>Vertex<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzVertexViewState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onResizeVertex">onResizeVertex</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L129">plugin/diagram-plugin.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> trigger after the vertex is resized  by user</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">EzVertexViewState</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onResizingVertex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Resizing<wbr>Vertex</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Resizing<wbr>Vertex<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzVertexViewState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onResizingVertex">onResizingVertex</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L123">plugin/diagram-plugin.ts:123</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>trigger when the vertex is resizing  by user</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">EzVertexViewState</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onRotateVertex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Rotate<wbr>Vertex</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Rotate<wbr>Vertex<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzVertexViewState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onRotateVertex">onRotateVertex</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L117">plugin/diagram-plugin.ts:117</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>trigger after the vertex is rotated  by user</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">EzVertexViewState</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onRotatingVertex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Rotating<wbr>Vertex</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Rotating<wbr>Vertex<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzVertexViewState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onRotatingVertex">onRotatingVertex</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L111">plugin/diagram-plugin.ts:111</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>trigger when the vertex is rotating  by user</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">EzVertexViewState</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onScaleDiagram" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Scale<wbr>Diagram</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Scale<wbr>Diagram<span class="tsd-signature-symbol">(</span>prev<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, current<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onScaleDiagram">onScaleDiagram</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L86">plugin/diagram-plugin.ts:86</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> trigger before diagram scale changes</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>prev: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>previouse diagram scale</p>
+									</div>
+								</li>
+								<li>
+									<h5>current: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>current diagram scale</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onStartEditing" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Start<wbr>Editing</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Start<wbr>Editing<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzVertexViewState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onStartEditing">onStartEditing</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L141">plugin/diagram-plugin.ts:141</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> trigger when start editing at a vertex element</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">EzVertexViewState</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onStopEditing" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Stop<wbr>Editing</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Stop<wbr>Editing<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EzVertexViewState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onStopEditing">onStopEditing</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L147">plugin/diagram-plugin.ts:147</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>trigger when stop editing at a vertex element</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">EzVertexViewState</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="onTranslateDiagram" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Translate<wbr>Diagram</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Translate<wbr>Diagram<span class="tsd-signature-symbol">(</span>prev<span class="tsd-signature-symbol">: </span><a href="EzPoint.html" class="tsd-signature-type" data-tsd-kind="Class">EzPoint</a>, current<span class="tsd-signature-symbol">: </span><a href="EzPoint.html" class="tsd-signature-type" data-tsd-kind="Class">EzPoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#onTranslateDiagram">onTranslateDiagram</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L93">plugin/diagram-plugin.ts:93</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> trigger before diagram translate changes</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>prev: <a href="EzPoint.html" class="tsd-signature-type" data-tsd-kind="Class">EzPoint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>previouse diagram translate</p>
+									</div>
+								</li>
+								<li>
+									<h5>current: <a href="EzPoint.html" class="tsd-signature-type" data-tsd-kind="Class">EzPoint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>current diagram translate</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setDisabled" class="tsd-anchor"></a>
+					<h3>set<wbr>Disabled</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Disabled<span class="tsd-signature-symbol">(</span>disabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="Plugin.EzDiagramPlugin.html">EzDiagramPlugin</a>.<a href="Plugin.EzDiagramPlugin.html#setDisabled">setDisabled</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/flying-ostrich/ez-diagram/blob/ad18d32/src/plugin/diagram-plugin.ts#L22">plugin/diagram-plugin.ts:22</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>disabled: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/EzMath.html">Ez<wbr>Math</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/Layout.html">Layout</a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/Plugin.html">Plugin</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/Style.html">Style</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/Plugin.Key.html" class="tsd-kind-icon">Key</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/Plugin.ModifierKey.html" class="tsd-kind-icon">Modifier<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="Plugin.EzBackGround.html" class="tsd-kind-icon">Ez<wbr>Back<wbr>Ground</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="Plugin.EzDiagramPlugin.html" class="tsd-kind-icon">Ez<wbr>Diagram<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="Plugin.EzDiagramPluginManager.html" class="tsd-kind-icon">Ez<wbr>Diagram<wbr>Plugin<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="Plugin.HotkeyHandler.html" class="tsd-kind-icon">Hotkey<wbr>Handler</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+						<a href="Plugin.SelectPlugin.html" class="tsd-kind-icon">Select<wbr>Plugin</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="Plugin.SelectPlugin.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#active" class="tsd-kind-icon">active</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#context" class="tsd-kind-icon">context</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#diagram" class="tsd-kind-icon">diagram</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#disabled" class="tsd-kind-icon">disabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Plugin.SelectPlugin.html#selectionArea" class="tsd-kind-icon">selection<wbr>Area</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Plugin.SelectPlugin.html#selectionBox" class="tsd-kind-icon">selection<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Plugin.SelectPlugin.html#startPoint" class="tsd-kind-icon">start<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="Plugin.SelectPlugin.html#SELECTION_BOX_TOLERANCE" class="tsd-kind-icon">SELECTION_<wbr>BOX_<wbr>TOLERANCE</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="Plugin.SelectPlugin.html#selected" class="tsd-kind-icon">selected</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#afterUpdate" class="tsd-kind-icon">after<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#afterViewUpdate" class="tsd-kind-icon">after<wbr>View<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#beforeCallingHook" class="tsd-kind-icon">before<wbr>Calling<wbr>Hook</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#beforeUpdate" class="tsd-kind-icon">before<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#beforeViewUpdate" class="tsd-kind-icon">before<wbr>View<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="Plugin.SelectPlugin.html#canActivate" class="tsd-kind-icon">can<wbr>Activate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Plugin.SelectPlugin.html#changeSelection" class="tsd-kind-icon">change<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="Plugin.SelectPlugin.html#createSelectionBox" class="tsd-kind-icon">create<wbr>Selection<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="Plugin.SelectPlugin.html#getInterSelectionStates" class="tsd-kind-icon">get<wbr>Inter<wbr>Selection<wbr>States</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="Plugin.SelectPlugin.html#isHandlerEvent" class="tsd-kind-icon">is<wbr>Handler<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onChangeSelection" class="tsd-kind-icon">on<wbr>Change<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onClick" class="tsd-kind-icon">on<wbr>Click</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onCreate" class="tsd-kind-icon">on<wbr>Create</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onDblClick" class="tsd-kind-icon">on<wbr>Dbl<wbr>Click</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onDeActivate" class="tsd-kind-icon">on<wbr>DeActivate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onDestroy" class="tsd-kind-icon">on<wbr>Destroy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="Plugin.SelectPlugin.html#onMouseDown" class="tsd-kind-icon">on<wbr>Mouse<wbr>Down</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onMouseMove" class="tsd-kind-icon">on<wbr>Mouse<wbr>Move</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="Plugin.SelectPlugin.html#onMouseUp" class="tsd-kind-icon">on<wbr>Mouse<wbr>Up</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onMoveVertex" class="tsd-kind-icon">on<wbr>Move<wbr>Vertex</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onMovingVertex" class="tsd-kind-icon">on<wbr>Moving<wbr>Vertex</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="Plugin.SelectPlugin.html#onPressMove" class="tsd-kind-icon">on<wbr>Press<wbr>Move</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="Plugin.SelectPlugin.html#onRemoveState" class="tsd-kind-icon">on<wbr>Remove<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onRendered" class="tsd-kind-icon">on<wbr>Rendered</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onResizeVertex" class="tsd-kind-icon">on<wbr>Resize<wbr>Vertex</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onResizingVertex" class="tsd-kind-icon">on<wbr>Resizing<wbr>Vertex</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onRotateVertex" class="tsd-kind-icon">on<wbr>Rotate<wbr>Vertex</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onRotatingVertex" class="tsd-kind-icon">on<wbr>Rotating<wbr>Vertex</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onScaleDiagram" class="tsd-kind-icon">on<wbr>Scale<wbr>Diagram</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onStartEditing" class="tsd-kind-icon">on<wbr>Start<wbr>Editing</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onStopEditing" class="tsd-kind-icon">on<wbr>Stop<wbr>Editing</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#onTranslateDiagram" class="tsd-kind-icon">on<wbr>Translate<wbr>Diagram</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="Plugin.SelectPlugin.html#setDisabled" class="tsd-kind-icon">set<wbr>Disabled</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="Plugin.SingleLineHandler.html" class="tsd-kind-icon">Single<wbr>Line<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="Plugin.SingleVertexHandler.html" class="tsd-kind-icon">Single<wbr>Vertex<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/Plugin.EzPluginContext.html" class="tsd-kind-icon">Ez<wbr>Plugin<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="../modules/Plugin.html#BackGroundGenerator" class="tsd-kind-icon">Back<wbr>Ground<wbr>Generator</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/Plugin.html#BUILTIN_PLGUIN" class="tsd-kind-icon">BUILTIN_<wbr>PLGUIN</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
