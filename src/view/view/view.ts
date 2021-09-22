@@ -575,6 +575,7 @@ export class EzDiagramView {
             if(state.updateWork===STATE_WORK_TYPE.NEED_CREATE){
                 createShape();
             }
+
             if(state.updateWork === STATE_WORK_TYPE.UPDATE_VIEW){
                 state.shape.redraw();
                 state.updateWork = STATE_WORK_TYPE.NO_WORK;
@@ -602,6 +603,12 @@ export class EzDiagramView {
             this._diagram.pluginManager.callHook('afterViewUpdate', this._diagram);
         }
         this.dirtyStates.length=0;
+    }
+
+    markAllDirty(){
+        this.states.forEach(state=>{
+            state.updateWork = STATE_WORK_TYPE.UPDATE_FROM_MODEL;
+        })
     }
 
 

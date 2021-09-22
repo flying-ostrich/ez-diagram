@@ -142,6 +142,7 @@ export class EzDiagram {
         const translate = new EzPoint(-(centerPoint.x*step/scale), -(centerPoint.y*step/scale));
         this.view.translate(translate);
         this.view.setScale(scale);
+        this.view.markAllDirty();
     }
 
     /**
@@ -177,10 +178,12 @@ export class EzDiagram {
      */
     translate(offset:EzPoint): void {
         this.view.translate(offset);
+        this.view.markAllDirty();
     }
 
     setTranslate(translate:EzPoint):void {
         this.view.setTranslate(translate);
+        this.view.markAllDirty();
     }
 
     /**

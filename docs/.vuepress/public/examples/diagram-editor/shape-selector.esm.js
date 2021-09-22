@@ -52,6 +52,8 @@ export const applyShapeSelector = (diagram) => {
     if (elInfo.type === "shape") {
       const shapeType = elInfo.shape;
       const position = diagram.view.getMousePointRelateToContainer(evt);
+      position.x = position.x / diagram.view.getScale() - diagram.view.getTranslate().x;
+      position.y = position.y / diagram.view.getScale() - diagram.view.getTranslate().y;
       if (!shapeType) return;
       const config = {
         shape: shapeType,
