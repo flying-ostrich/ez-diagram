@@ -9,8 +9,8 @@ The following demo demonstrates how to use ez-diagram to create a simple graph w
 
 :::: tabs
 ::: tab preview
-<a href="/examples/hello-world/hello-world.html" target="_blank">open in new tab</a>
-<iframe class="thin" src="/examples/hello-world/hello-world.html"></iframe>
+<a :href="$withBase('/examples/hello-world/hello-world.html')" target="_blank">open in new tab</a>
+<iframe class="thin" :src="$withBase('/examples/hello-world/hello-world.html')"></iframe>
 :::
 ::: tab code for es module env
 <<< @/docs/.vuepress/public/examples/hello-world/hello-world.esm.js
@@ -28,8 +28,8 @@ ez-diagram provides many built in shapes to help you create different vertex .
 
 :::: tabs
 ::: tab preview
-<a href="/examples/add-vertex/add-vertex.html" target="_blank">open in new tab</a>
-<iframe class="thin" src="/examples/add-vertex/add-vertex.html"></iframe>
+<a :href="$withBase('/examples/add-vertex/add-vertex.html')" target="_blank">open in new tab</a>
+<iframe class="thin" :src="$withBase('/examples/add-vertex/add-vertex.html')"></iframe>
 :::
 ::: tab code for adding vertex
 <<< @/docs/.vuepress/public/examples/add-vertex/add-vertex.esm.js
@@ -41,8 +41,8 @@ for more built in shapes , see <a href="/api-reference/modules.html#BUILTIN_SHAP
 also , you can create edge with class EzEdge.
 :::: tabs
 ::: tab preview
-<a href="/examples/add-edge/add-edge.html" target="_blank">open in new tab</a>
-<iframe class="thin" src="/examples/add-edge/add-edge.html"></iframe>
+<a :href="$withBase('/examples/add-edge/add-edge.html')" target="_blank">open in new tab</a>
+<iframe class="thin" :src="$withBase('/examples/add-edge/add-edge.html')"></iframe>
 :::
 ::: tab code for adding vertex
 <<< @/docs/.vuepress/public/examples/add-edge/add-edge.esm.js

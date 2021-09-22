@@ -1,8 +1,9 @@
+const base = '/ez-diagram/';
 module.exports = {
   title: "ez-diagram",
+  base,
   description:
     "a powerful and easy javascript framework to help build rich graphs",
-  dest:'site',
   themeConfig: {
     sidebar: "auto",
     nav: [
@@ -10,7 +11,7 @@ module.exports = {
       { text: "Demos", link: "/demos.md" },
       {
         text: "API Reference",
-        link: "/api-reference/index.html",
+        link: `${base}api-reference/index.html`,
         target: "_blank",
       },
       { text: "GitHub", link: "http://www.github.com" },
