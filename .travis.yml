@@ -22,6 +22,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $EZDIAGRAM 
-  local_dir: site
+  local_dir: docs/.vuepress/dist
   on:
     branch: main
