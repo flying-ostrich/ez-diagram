@@ -1,4 +1,3 @@
-# EzDiagram
+ez-diagram is a powerful and easy javascript framework to help build rich graphs. for more examples 
 
-
-<iframe width="100%" height="100%" src="./docs/examples/select.html"></iframe>
+for more information , see  [here](https://flying-ostrich.github.io/ez-diagram/)
