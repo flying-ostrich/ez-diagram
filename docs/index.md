@@ -156,11 +156,33 @@ the following example will show you how to create a ClickLog plugin , that is , 
 :::
 ::::
 
+### EzElement
+before talking about custom shape , i'd like to introduce the <a :href="$withBase('/api-reference/classes/EzElement.html')">EzElement</a>, it's a tool to help create and manipulate DOM element easily. 
+the following example shows how to create a svg rect using EzElement
+```js
+// the below code create a svg rect like this:
+// <rect x="0" y="0" width="100" height="100" style="width:100px;"></rect>
+EzElement.el('rect').attr({x:0,y:0,width:100,height:100}).style({width:'10px'})
 
+// the below code create a svg "g" element and append a ellipse as it's child
+//   <g>
+//      <ellipse rx="10" ry="10" cx="10" cy="10"></ellipse>
+//   </g>
+EzElement.el('g').appendChild(EzElement.el('ellipse').attr({cx:10,cy:10,rx:10,ry:10}));
+```
 
-### custom shape
-### custom arrow heads
-
+### Custom shape
+::: tip
+TODO
+:::
+### Custom arrow heads
+::: tip
+TODO
+:::
+### Layout
+::: tip
+TODO
+:::
 ## what's next ?
 ### IO
 - export diagram as xml and json 
@@ -171,5 +193,6 @@ the following example will show you how to create a ClickLog plugin , that is , 
 - enable undo & redo 
 
 ### more built in shapes
-- UML shapes such as UML class 、 UML interface 、 UML active 、UML live line ...
+- UML shapes. such as UML class 、 UML interface 、 UML active 、UML live line ...
+- line shapes. such as segment line 、 curved line ...
 
