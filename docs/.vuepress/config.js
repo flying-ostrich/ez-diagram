@@ -11,7 +11,7 @@ module.exports = {
       { text: "Demos", link: "/demos.md" },
       {
         text: "API Reference",
-        link: `${base}api-reference/index.html`,
+        link: `${base}api-reference/modules.html`,
         target: "_blank",
       },
       { text: "GitHub", link: "http://www.github.com" },
