@@ -14,7 +14,7 @@ module.exports = {
         link: `${base}api-reference/modules.html`,
         target: "_blank",
       },
-      { text: "GitHub", link: "http://www.github.com" },
+      { text: "GitHub", link: "https://github.com/flying-ostrich/ez-diagram" },
     ],
   },
   plugins: ["vuepress-plugin-element-tabs"],
