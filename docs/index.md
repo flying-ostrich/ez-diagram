@@ -196,4 +196,6 @@ TODO
 - UML shapes. such as UML class 、 UML interface 、 UML active 、UML live line ...
 - line shapes. such as segment line 、 curved line ...
 
-![image-20211125220623328](/Users/jianlun.peng/opensource/ez-diagram/docs/index.assets/image-20211125220623328.png)
+![image-20211125220623328](./index.assets/image-20211125220623328.png)
+
+![image-20211125222432385](./index.assets/image-20211125222432385.png)
